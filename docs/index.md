@@ -8,7 +8,11 @@ hero:
   actions:
     - theme: brand
       text: 查阅文档 →
-      link: /guide/quick-start
+      link: https://docs.chcat.cn/docs/
+      icon: ⚡️
+    - theme: alt
+      text: 查阅API-v2文档
+      link: /API-v2
       icon: ⚡️
     - theme: alt
       text: 立即使用
