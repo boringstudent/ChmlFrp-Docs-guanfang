@@ -32,26 +32,45 @@ export default defineConfig({
             { 
               text: '用户认证', 
               items: [
-                { text: '登录', link: '/API/v1/auth/login' },
-                { text: '注册', link: '/API/v1/auth/register' },
-                { text: '令牌刷新', link: '/API/v1/auth/refresh' }
+                { text: '登录', link: '/API/v1/User_Actions/login' },
+                { text: '重置令牌', link: '/API/v1/User_Actions/resusertoken' },
+                { text: '签到信息', link: '/API/v1/User_Actions/qdxx' },
+                { text: '用户信息', link: '/API/v1/User_Actions/userinfo' },
+                { text: '用户流量消耗', link: '/API/v1/User_Actions/flow_zong' },
+                { text: '用户节点数据', link: '/API/v1/User_Actions/confignode' },
+                { text: '兑换码兑换', link: '/API/v1/User_Actions/giftcode' },
               ]
             },
             { 
-              text: '隧道管理', 
+              text: '域名操作',
               items: [
-                { text: '创建隧道', link: '/API/v1/tunnel/create' },
-                { text: '删除隧道', link: '/API/v1/tunnel/delete' },
-                { text: '列表查询', link: '/API/v1/tunnel/list' }
+                { text: '域名解析查询', link: '/API/v1/Domain_name_query/Domain_name_query' },
               ]
             },
             { 
-              text: '节点信息', 
+              text: '面板信息',
               items: [
-                { text: '节点状态', link: '/API/v1/node/status' },
-                { text: '节点列表', link: '/API/v1/node/list' }
+                { text: '面板设置', link: '/API/v1/usersetup/usersetup' },
+                { text: '面板信息', link: '/API/v1/usersetup/sinfo' }
               ]
-            }
+            },
+            {
+              text: '节点信息',
+              items: [
+                { text: '节点信息', link: '/API/v1/unode/unode' },
+              ]
+            },
+            {
+              text: '隧道操作',
+              items: [
+                { text: '用户隧道信息', link: '/API/v1/Tunnel_operations/usertunnel' },
+                { text: '隧道信息', link: '/API/v1/Tunnel_operations/tunnelinfo' },
+                { text: '新建隧道', link: '/API/v1/Tunnel_operations/tunnel' },
+                { text: '修改隧道', link: '/API/v1/Tunnel_operations/cztunnel' },
+                { text: '删除隧道', link: '/API/v1/Tunnel_operations/deletetl' },
+                { text: 'frp配置文件生成', link: '/API/v1/Tunnel_operations/frpconfig' },
+              ]
+            },
           ]
         }
       ],
@@ -63,33 +82,53 @@ export default defineConfig({
             { 
               text: '用户认证', 
               items: [
-                { text: 'OAuth2 登录', link: '/API/v2/auth/oauth' },
-                { text: '双因素认证', link: '/API/v2/auth/2fa' },
-                { text: '令牌管理', link: '/API/v2/auth/tokens' }
+                { text: '登录', link: '/API/v2/User_Actions/login' },
+                { text: '用户信息', link: '/API/v2/User_Actions/userinfo' },
+                { text: '重置令牌', link: '/API/v2/User_Actions/retoken' },
+                { text: '重置密码', link: '/API/v2/User_Actions/reset_password' },
+                { text: '修改用户名', link: '/API/v2/User_Actions/update_username' },
+                { text: '修改QQ', link: '/API/v2/User_Actions/update_qq' },
+                { text: '重置头像', link: '/API/v2/User_Actions/update_userimg' },
+                { text: '获取消息', link: '/API/v2/User_Actions/messages' },
               ]
             },
             { 
-              text: '高级隧道', 
+              text: '隧道操作',
               items: [
-                { text: '批量操作', link: '/API/v2/tunnel/batch' },
-                { text: '高级配置', link: '/API/v2/tunnel/advanced' },
-                { text: '实时统计', link: '/API/v2/tunnel/stats' }
+                { text: '隧道列表', link: '/API/v2/Tunnel_operations/tunnel' },
+                { text: '创建隧道', link: '/API/v2/Tunnel_operations/create_tunnel' },
+                { text: '修改隧道', link: '/API/v2/Tunnel_operations/update_tunnel' },
+                { text: '删除隧道', link: '/API/v2/Tunnel_operations/delete_tunnel' },
+                { text: '生成配置文件', link: '/API/v2/Tunnel_operations/tunnel_config' },
               ]
             },
             { 
-              text: '集群节点', 
+              text: '面板信息',
               items: [
-                { text: '负载均衡', link: '/API/v2/node/loadbalance' },
-                { text: '健康检查', link: '/API/v2/node/health' }
+                { text: '面板信息', link: '/API/v2/Panel_information/panelinfo' },
+                { text: 'API状态', link: '/API/v2/Panel_information/server-status' }
               ]
             },
             { 
-              text: 'Webhook', 
+              text: '域名操作',
               items: [
-                { text: '事件订阅', link: '/API/v2/webhook/events' },
-                { text: '安全验证', link: '/API/v2/webhook/security' }
+                { text: '获取可用域名列表', link: '/API/v2/Domain_name_operations/list_available_domains' },
+                { text: '创建免费二级域名', link: '/API/v2/Domain_name_operations/create_free_subdomain' },
+                { text: '修改免费二级域名', link: '/API/v2/Domain_name_operations/update_free_subdomain' },
+                { text: '删除免费二级域名', link: '/API/v2/Domain_name_operations/delete_free_subdomain' },
+                { text: '获取用户免费二级域名', link: '/API/v2/Domain_name_operations/get_user_free_subdomains' },
               ]
-            }
+            },
+            {
+              text: '节点操作',
+              items: [
+                { text: '节点列表', link: '/API/v2/Node_operations/node' },
+                { text: '节点详情', link: '/API/v2/Node_operations/nodeinfo' },
+                { text: '节点状态', link: '/API/v2/Node_operations/node_stats' },
+                { text: '节点在线率', link: '/API/v2/Node_operations/node_uptime' },
+                { text: '节点状态详情', link: '/API/v2/Node_operations/node_status_info' },
+              ]
+            },
           ]
         }
       ]

@@ -11,10 +11,6 @@ hero:
       link: https://docs.chcat.cn/docs/
       icon: ⚡️
     - theme: alt
-      text: 查阅API-v2文档
-      link: /API-v2
-      icon: ⚡️
-    - theme: alt
       text: 立即使用
       link: https://www.chmlfrp.cn
       icon: 📦
