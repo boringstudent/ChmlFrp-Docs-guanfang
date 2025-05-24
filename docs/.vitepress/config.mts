@@ -13,6 +13,7 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
+      { text: '使用文档', link: '/123/' },
       { 
         text: 'API文档', 
         items: [
