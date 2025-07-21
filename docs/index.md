@@ -139,3 +139,7 @@ onMounted(() => {
 ::: tip
 欢迎参与文档共建！您的每一个PR都是对我们莫大的帮助。请访问GitHub仓库提交改进建议。我们将定期审核合并，并为杰出贡献者提供VIP等专属福利。
 :::
+
+::: center
+<a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备2025107306号-1</a>
+:::
