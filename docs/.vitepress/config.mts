@@ -13,12 +13,12 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '使用文档', link: '/123/' },
       { 
         text: 'API文档', 
         items: [
           { text: 'v1 版本', link: '/API/v1/' },
-          { text: 'v2 版本', link: '/API/v2/' }
+          { text: 'v2 版本', link: '/API/v2/' },
+          { text: '第三方api', link: '/API/third_party_api/' },
         ]
       }
     ],
@@ -132,7 +132,24 @@ export default defineConfig({
             },
           ]
         }
-      ]
+      ],
+            '/API/third_party_api/': [
+        {
+          text: '第三方api 文档',
+          items: [
+            { text: '第三方api 介绍', link: '/API/third_party_api/' },
+            {
+              text: 'api文档',
+              items: [
+                { text: 'IP信息', link: '/API/third_party_api/ip/ip' },
+                { text: '节点在线率', link: '/API/third_party_api/node/node' },
+                { text: '节点ip', link: '/API/third_party_api/delay/delay' },
+
+              ]
+            },
+          ]
+        }
+      ],
     },
 
     socialLinks: [
