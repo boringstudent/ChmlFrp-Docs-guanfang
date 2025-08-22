@@ -142,9 +142,10 @@ export default defineConfig({
               text: 'api文档',
               items: [
                 { text: 'IP信息', link: '/API/third_party_api/ip/ip' },
-                { text: '节点在线率', link: '/API/third_party_api/node/node' },
+                { text: '所有节点在线率', link: '/API/third_party_api/node/node' },
+                { text: '单个节点在线率', link: '/API/third_party_api/node/nodes' },
                 { text: '节点ip', link: '/API/third_party_api/delay/delay' },
-
+                { text: '站点延时和存活', link: '/API/third_party_api/panel' },
               ]
             },
           ]
