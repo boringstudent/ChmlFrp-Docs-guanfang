@@ -1,6 +1,6 @@
 # 获取站点延时和存活
 - 接口
-    > GET https://panel.api.chmlfrp.com/
+    > GET https://chmlfrp.api.chmlfrp.com/panel
 - 请求参数
 
     无

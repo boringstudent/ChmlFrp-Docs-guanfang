@@ -1,6 +1,6 @@
 # 获取单个节点的平均在线率（最多90天）
 - 接口
-    > GET /node_uptime
+    > GET https://chmlfrp.api.chmlfrp.com/node_uptime
 - 请求参数
 
     **JSON:**

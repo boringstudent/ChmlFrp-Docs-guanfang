@@ -1,6 +1,6 @@
 # 获取ip信息(代理ip时无法查询)
 - 接口
-    > GET /ip
+    > GET https://chmlfrp.api.chmlfrp.com/ip
 - 请求参数
 
     无

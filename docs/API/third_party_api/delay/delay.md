@@ -1,6 +1,6 @@
 # 获取所有节点的域名
 - 接口
-    > GET /delay
+    > GET https://chmlfrp.api.chmlfrp.com/delay
 - 请求参数
 
     **JSON:**
